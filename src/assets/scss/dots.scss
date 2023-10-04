@@ -1,0 +1,13 @@
+.dots {
+    position: absolute;
+    bottom: 30px;
+    span {
+        border-radius: 50%;
+        background-color: darkblue;
+        display: block;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 50px;
+    }
+}

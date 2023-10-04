@@ -1,0 +1,20 @@
+.page {
+    padding: 120px 50px 30px;
+    text-align: left;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100vw;
+        height: 80px;
+        background: darkblue;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    h2 {
+        font-size: 20px;
+        text-transform: none;
+        text-align: left;
+    }
+    
+}

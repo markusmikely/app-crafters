@@ -1,0 +1,10 @@
+header#header {
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 40px);
+    right: 0;
+    color: white;
+    z-index: 1;
+}

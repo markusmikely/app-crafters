@@ -1,0 +1,30 @@
+.article {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .article- {
+        &hero {
+            background: deepskyblue;
+            padding: 80px 20px;
+            margin-bottom: 40px;
+        }
+        &content {
+            font-size: 16px;
+            code {
+                background: #eee;
+                padding: 10px 15px;
+                display: block;
+                margin: 20px 0;
+                border-radius: 5px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }  
+    }    
+    
+    
+}

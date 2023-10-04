@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+section {
+    min-height: calc(100vh - 100px);
+    width: calc(100vw - 100px);
+    padding: 50px;
+    clear: both;
+    background: #f8f8f8;
+    &#hero {
+        background: darkblue;
+        color: white;
+        min-height: calc(100vh - 100px);
+        h2 {
+            margin-top: -50px;
+            position: relative;
+        }
+        img {
+            z-index: 10;
+            height: 400px;
+            width: auto;
+            position: absolute;
+            bottom: -30px;
+        }
+        .shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 2px solid white;
+            height: 150px;
+            span {
+                width: 50vw;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.377);
+                display: block;
+                position: absolute;
+                top: 140px;
+                left: 50%;
+                transform: rotate(15deg);
+                &:nth-child(2) {
+                    transform: rotate(165deg);
+                    left: 0;
+                }
+            }
+        }
+    }
+    &#about {
+        padding-top: 80px;
+    }
+    &#services {
+        background: darkred url(./../images/idea.svg) no-repeat;
+        background-size: 200px;
+        background-position: 50px 50px;
+        color: white;
+        position: relative;
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:  url(./../images/services-grid.png) no-repeat;
+            background-size: contain;
+            opacity: .1;
+        }
+        * {
+            position: relative;
+        }
+        img {
+            height: 300px;
+            margin-bottom: -70px;
+            margin-top: -45px;
+        }
+    }
+    &#case-studies {
+        background: darkblue;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        .background-video {
+            height: auto !important;
+            width: 180vw !important;
+
+        }
+    }
+    &.centered {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
